@@ -1,0 +1,52 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.box {
+  background: #eee;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box:first-child {
+  width: 500px;
+}
+
+.inner-container {
+  background: blue;
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+}
+
+p span {
+  font-weight: bold;
+}
+
+.has-spacer::after {
+  background: purple;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 25px auto;
+  /*margin: 25px 0;*/
+}
+
+.money:before {
+  content: '$';
+}
+
+.mega-important {
+  color: red;
+  font-size: 22px;
+}
+
+.not-so-important {
+  font-size: 10px;
+}
+
+#hooplah {
+  font-size: 32px;
+}
